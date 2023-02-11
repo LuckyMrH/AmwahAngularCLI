@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Amwh Agular CLI'`, () => {
+  it(`should have as title 'AMWAH'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Amwh Agular FfCLI');
+    expect(app.title).toEqual('AMWAH');
   });
 
   it('should render title', () => {
