@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AmwahMenuComponent } from './amwah-menu/amwah-menu.component';
@@ -14,23 +15,24 @@ import { UserAuthComponent } from './components/user-auth/user-auth.component';
 import { UsStatesComponent } from './components/us-states/us-states.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AmwahMenuComponent,
-    AmwahPageNotFoundComponent,
-    AuthComponent,
-    DashboardComponent,
-    PageNotFoundComponent,
-    SecureUserComponent,
-    StateComponent,
-    UsCountiesComponent,
-    UserAuthComponent,
-    UsStatesComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AmwahMenuComponent,
+        AmwahPageNotFoundComponent,
+        AuthComponent,
+        DashboardComponent,
+        PageNotFoundComponent,
+        SecureUserComponent,
+        StateComponent,
+        UsCountiesComponent,
+        UserAuthComponent,
+        UsStatesComponent
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
